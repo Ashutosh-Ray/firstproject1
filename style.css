@@ -70,8 +70,8 @@ nav .list ul li{
     width: 170px;
     border:1px;
     height: 10vh;
-    line height:30px;
-    text-algn:center;
+    line-height:30px;
+    text-align:center;
     float: left;
     font-size: 48px;
     position: relative;
@@ -101,7 +101,7 @@ nav .list ul ul ul{
 }
 
 nav .list a{
-    width: 25%
+    width: 25%;
     color: white;
     letter-spacing: 4px;
     font-weight: italic;
@@ -200,7 +200,7 @@ nav .list a{
     color: red;
     background-color: orange;
     text-decoration: underline;
-    border-radius: 10%
+    border-radius: 10%;
     line-height: 10px;
     font-weight: bold;
 }
@@ -209,7 +209,7 @@ nav .list a{
     color: yellow;
     background-color: orange;
     text-decoration: underline;
-    border-radius: 10%
+    border-radius: 10%;
     line-height: 10px;
     font-weight: bold;
 }
@@ -217,7 +217,7 @@ nav .list a{
 .city{
     align-content: center;
     width: 20%;
-    height: 25%
+    height: 25%;
     display:flex;
    }
 
@@ -237,9 +237,6 @@ nav .list a{
         #06dee1,
         #79ff6c
     )
-}
-section{
-    
 }
 
 .change_content:after{
