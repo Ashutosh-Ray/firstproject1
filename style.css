@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(232, 225, 202);
+    -webkit-background-size:cover;
+    background-size: border-box;
+    background-position: center center;
+    height:120vh;
+    padding:0;
+    margin:0;
+    margin-bottom: 250px;
+}
+
+header{
+    width: 100%;height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+
+nav{
+    width: 100%;height: 20vh;
+    background: white;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    color: green;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    height: 15vh
+}
+
+nav .logo:hover{
+    cursor:pointer;
+    }
+
+
+nav .list{
+    width: 860px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+        }
+
+nav .list ul{
+    list-style:none;
+    margin-top:2%;
+}
+
+nav .list ul li{
+    background:rgb(62, 230, 224);
+    width: 170px;
+    border:1px;
+    height: 10vh;
+    line height:30px;
+    text-algn:center;
+    float: left;
+    font-size: 48px;
+    position: relative;
+    font-family:arial;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+nav .list ul li:hover{
+    color: brown;
+    background: rgb(209, 252, 255);
+    cursor: pointer;
+}
+nav .list ul ul{
+    display: none;
+    position:absolute;
+}
+
+nav .list ul li:hover>ul{
+    display: block;
+}
+nav .list ul ul ul{
+    margin-left: 170px;
+    top: 0;
+    position: absolute;
+}
+
+nav .list a{
+    width: 25%
+    color: white;
+    letter-spacing: 4px;
+    font-weight: italic;
+    font-size: 20px;
+    text-decoration: none;
+    font-style: sans-serif;
+}
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('https://images.unsplash.com/photo-1571884085056-01282f5ac9d1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1029&q=80');
+    background-size: cover;
+    background-blend-mode: hard-light;
+}
+
+.firstSection{
+    height: 85vh;
+}
+
+
+.text-big{
+    font-size: 41px;
+    text-transform: uppercase;
+    color: rgb(74, 69, 73);
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.section{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 80px;
+}
+
+.sectionTag{
+    padding: 20px 0;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.thumbnail img{
+    width: 600px;
+    border: 4px solid rgb(77, 69, 69);
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+
+.city{
+    width:860px;
+    margin: 0 auto;
+}
+
+
+.city a:link{
+    background-color: red;
+    color: green;
+    display: flex;
+    text-decoration: none;
+    padding: 20px;
+      border-radius: 10%;
+      line-height: 10px;
+      font-weight: bold;
+
+}
+
+.city a:visited{
+    background-color: red;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    padding: 20px;
+      border-radius: 10%;
+      line-height: 10px;
+      font-weight: bold;
+}
+
+.city a:hover{
+    color: red;
+    background-color: orange;
+    text-decoration: underline;
+    border-radius: 10%
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.city a:active{
+    color: yellow;
+    background-color: orange;
+    text-decoration: underline;
+    border-radius: 10%
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.city{
+    align-content: center;
+    width: 20%;
+    height: 25%
+    display:flex;
+   }
+
+
+::-webkit-scrollbar{
+    width: 25px;
+}
+
+::-webkit-scrollbar-track{
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,234)
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        45deg,
+        #06dee1,
+        #79ff6c
+    )
+}
+section{
+    
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 17s infinite linear;
+    color:#f5831f;
+     text-shadow: 2px 1px 5px rgb(215, 90, 224);
+}
+
+@keyframes changetext{
+    0%{content: "PURI";}
+    5%{content: "BHUBANESWAR";}
+    9%{content: "KONARK";}
+    15%{content: "CHANDIPUR";}
+    18%{content: "PIPILI";}
+    22%{content: "PARADEEP";}
+    29%{content: "JEYPORE";}
+    33%{content: "DARINGBADI";}
+    38%{content: "BARBIL";}
+    42%{content: "BRAHMAPUR";}
+    49%{content: "CUTTACK";}
+    56%{content: "SAMBALPUR";}
+    62%{content: "ROURKELA";}
+    69%{content: "BARIPADA";}
+    76%{content: "SHREE JAGANNATH TEMPLE";}
+    83%{content: "CHILIKA LAKE";}
+    89%{content: "TALASARI WILDLIFE SANCTUARY";}
+    93%{content: "GOPALAPUR";}
+    99%{content: "SIMPLIPAL NATIONAL PARK";}
+}
+
+
+section h3{
+    font-size: 35px;font-weight: 200;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color:rgb(48, 255, 176);
+    text-shadow: 1px 1px 2px rgb(84, 235, 47);
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 1px 5px green;
+    text-transform: uppercase;
+/*    padding: 160px;*/
+}
+
+
+#map{
+    padding: 60px 0px;
+    width: 1340px; 
+    height: 270px;
+}
